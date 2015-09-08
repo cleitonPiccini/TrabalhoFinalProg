@@ -19,13 +19,83 @@ class Cliente {
 
 	}
 
-	public String getNome() {
+//Get das informações dos clientes.
+
+	public String getNomeCliente() {
 
 		return nomeCliente;
 	}
 
-	public void setNome(String nome) {
+	public int getCPF() {
+
+		return cpfCliente;
+	}
+
+	public int getNumeroComprasPainel() {
+
+		return numeroComprasPainel;
+	}
+
+	public int getNumeroComprasPeca() {
+
+		return numeroComprasPeca;
+	}
+
+	public boolean getPainel() {
+
+		return painel;
+	}
+
+	public boolean getPeca() {
+
+		return peca;
+	}
+
+// Set das informações dos clientes
+
+	public void setNome (String nome) {
 
 		this.nomeCliente = nome;
 	}
+
+	public int setCPF (int cpf) {
+
+		this.cpfCliente = cpf;
+	}
+
+	public int setNumeroCompraPainel (int comprasPainel) {
+
+		this.numeroComprasPainel = comprasPainel;
+	}
+
+	public int setNumeroCompraPeca (int comprasPeca) {
+
+		this.numeroComprasPeca = comprasPeca;
+	}
+
+	public boolean setPainel (int p) {
+
+		this.painel = p;
+	}
+
+	public boolean setPeca (int pe) {
+
+		this.peca = pe;
+	}
+
+// Salva dados no banco.
+
+	public void SalvaCliente () {
+		/*
+		banco = this.nomeCliente;
+		banco = this.cpfCliente;
+		banco = this.numeroComprasPainel;
+		banco = this.numeroComprasPeca;
+		banco = this.painel;
+		banco = this.peca;
+		*/
+	}
+
+
+
 }
